@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="500.0" styleClass="listPane" stylesheets="@application/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentController">
+   <children>
+      <Label fx:id="Info" alignment="CENTER" contentDisplay="CENTER" layoutX="51.0" layoutY="14.0" prefHeight="436.0" prefWidth="398.0" styleClass="withoutBackLabel" stylesheets="@application/application.css" textAlignment="CENTER" textFill="#2441e3">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="49.0" layoutY="464.0" prefHeight="56.0" prefWidth="194.0" styleClass="withoutBackLabel" stylesheets="@application/application.css" text="總付金額：" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pay" layoutX="248.0" layoutY="466.0" prefHeight="50.0" prefWidth="203.0" promptText="金額">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </TextField>
+      <Button layoutX="185.0" layoutY="556.0" mnemonicParsing="false" onAction="#NextPressed" prefHeight="56.0" prefWidth="130.0" text="下一步">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
